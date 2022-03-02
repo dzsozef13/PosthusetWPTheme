@@ -1,0 +1,36 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    height: 200px;
+    padding: 32px 200px 32px 200px;
+    margin: 0;
+
+    text-align: right;
+
+    background-color: #444;
+}
+
+#footer h6 {
+    color: #eee;
+}
+
+/* #footer-logo {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 32px;
+    background-image: url(http://localhost:8888/wp-content/uploads/2021/12/logo-icon.svg);
+    background-repeat: no-repeat;
+} */
+
+@media screen and (max-width: 700px) {
+    #footer {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        height: 400px;
+        padding: 32px;
+    }
+}

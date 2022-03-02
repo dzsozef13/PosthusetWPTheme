@@ -1,0 +1,219 @@
+/* welcome */
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 75vh;
+
+    margin: 0;
+    padding: 15vh 32px 0 32px;
+
+    color: white;
+    background-color: black;
+    background-size: cover;
+    background-position: bottom 25% center;
+}
+
+#welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 64px;
+    max-height: 30vh;
+}
+
+#welcome #welcome-content #welcome-title h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#welcome-logo {
+    width: 100%;
+    height: 100%;
+    max-width: 296px;
+    max-height: 296px;
+    margin-bottom: 32px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#welcome-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 499;
+    bottom: 10%;
+
+    width: 100%;
+    padding: 0 100px 0 100px;
+    height: max-content;
+}
+
+#welcome-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    height: max-content;
+}
+
+#welcome-cards .welcome-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+
+    height: 25vh;
+    min-height: 200px;
+    max-height: 400px;
+    width: 400px;
+    margin: 8px;
+    background-color: #444;
+    transition: 0.3s;
+}
+
+#welcome-cards .welcome-card:hover {
+    background-color: #B13535;
+    text-decoration: none;
+}
+
+#welcome-cards .welcome-card h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    padding: 8px;
+    color: #eee;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0F0F0F;
+    background-size: 60%;
+    border-radius: 0;
+    transition: 0.1s;
+}
+
+#welcome-cards .welcome-card:hover .card-img {
+    background-size: 65%;
+}
+
+/* welcome mobile */
+
+#welcome-cards-container-mobile {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 499;
+    bottom: 10%;
+
+    width: 100%;
+    padding: 0;
+    height: max-content;
+}
+
+#welcome-cards-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    margin: 16px;
+    height: max-content;
+}
+
+#welcome-cards-mobile .welcome-card-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 44px;
+    width: 100%;
+    margin: 8px;
+    background-color: #111;
+    transition: 0.3s;
+}
+
+#welcome-cards-mobile .welcome-card-mobile:hover {
+    background-color: #B13535;
+    text-decoration: none;
+}
+
+#welcome-cards-mobile .welcome-card-mobile h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: 8px 16px 8px 8px;
+    letter-spacing: 1px;
+    color: #eee;
+}
+
+.card-img-mobile {
+    width: 44px;
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #090909;
+    background-size: 80%;
+    border-radius: 0;
+    transition: 0.1s;
+}
+
+#welcome-cards-mobile .welcome-card-mobile:hover .card-img-mobile {
+    background-size: 85%;
+}
+
+/* mobile queries */
+
+@media screen and (max-width: 768px) {
+
+    #welcome {
+        padding: 64px 32px 0 32px;
+        height: 100vh;
+    }
+
+    #welcome-content {
+        margin-top: 0;
+    }
+	
+	#welcome #welcome-content #welcome-title h1 {
+		font-size: 22px;
+	}
+
+    #welcome-logo {
+        margin-top: 0;
+		max-height: 96px;
+    }
+
+    #welcome-cards-container {
+        display: none;
+    }
+
+    #welcome-cards-container-mobile {
+        display: flex;
+    }
+
+}
