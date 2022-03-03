@@ -53,8 +53,8 @@ $events_query = new WP_Query($events_args); //create new query
                         </div>
 
                         <h6> <?php the_field('room_description') ?> </h6>
-                        <h3 class="price-tag"> Fra <?php the_field('room_pricetag') ?>,-</h3>
-                        <h6 class="price-note"> per person </h6>
+                        <!-- <h3 class="price-tag"> Fra <?php the_field('room_pricetag') ?>,-</h3>
+                        <h6 class="price-note"> per person </h6> -->
                         <?php $button = get_field('room_button') ?>
                         <a href="<?php echo $button['url'] ?>" class="button">
                             <h2> <?php echo $button['title'] ?> </h2>

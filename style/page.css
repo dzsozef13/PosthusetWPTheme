@@ -71,9 +71,20 @@
     padding: 64px;
 }
 
+.carousel {
+    width: 100%;
+    margin: 32px 0 0 0;
+    background-color: #222;
+}
+
 .carousel-img {
-    width: 400px;
-    height: 400px;
+    display: flex;
+    width: 100%;
+    height: calc(100vh * 0.5);
+    max-height: 512px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* header section */
