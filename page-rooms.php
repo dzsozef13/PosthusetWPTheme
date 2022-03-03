@@ -32,15 +32,24 @@ $events_query = new WP_Query($events_args); //create new query
 
                         <div id="room-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                <div class="carousel-img" style="background-image: url(<?php the_field('room_carousel_item1'); ?>);"></div>
-                                </div>
-                                <div class="carousel-item">
-                                <div class="carousel-img" style="background-image: url(<?php the_field('room_carousel_item2'); ?>);"></div>
-                                </div>
-                                <div class="carousel-item">
-                                <div class="carousel-img" style="background-image: url(<?php the_field('room_carousel_item3'); ?>);"></div>
-                                </div>
+                                <?php 
+                                $carouselItem1 = get_field("room_carousel_item1");
+                                $carouselItem2 = get_field("room_carousel_item2");
+                                $carouselItem3 = get_field("room_carousel_item3");
+                                ?>
+                                <?php if ($carouselItem1) { ?>
+                                    <div class="carousel-item active">
+                                        <div class="carousel-img" style="background-image: url(<?php echo $carouselItem1 ?>);"></div>
+                                    </div>
+                                <?php } if ($carouselItem2) { ?>
+                                    <div class="carousel-item">
+                                        <div class="carousel-img" style="background-image: url(<?php echo $carouselItem2 ?>);"></div>
+                                    </div>
+                                <?php } if ($carouselItem3) { ?>
+                                    <div class="carousel-item">
+                                        <div class="carousel-img" style="background-image: url(<?php echo $carouselItem3 ?>);"></div>
+                                    </div>
+                                <?php } ?>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#room-carousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -60,9 +69,6 @@ $events_query = new WP_Query($events_args); //create new query
                             <h2> <?php echo $button['title'] ?> </h2>
                             <div class="button-deco"></div>
                         </a>  
-                    </div>
-                    <div class="col-md-6 col-sm-12 content">
-                        <div class="img" style="background-image: url(<?php the_field('event_cover_image'); ?>);"></div>
                     </div>
                 </div>
             </div>
