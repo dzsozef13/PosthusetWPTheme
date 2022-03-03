@@ -29,7 +29,6 @@ $events_query = new WP_Query($events_args); //create new query
                     <div class="col-md-12 col-sm-12 content">
                         <h2> <?php the_field('room_title') ?> </h2>
                         <h3> <?php the_field('room_subtitle') ?> </h3>
-
                         <div id="room-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <?php 
@@ -60,7 +59,6 @@ $events_query = new WP_Query($events_args); //create new query
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
                         <h6> <?php the_field('room_description') ?> </h6>
                         <!-- <h3 class="price-tag"> Fra <?php the_field('room_pricetag') ?>,-</h3>
                         <h6 class="price-note"> per person </h6> -->

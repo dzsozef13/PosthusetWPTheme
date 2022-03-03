@@ -169,6 +169,14 @@ $buttonSection4 = get_field('section4_button');
     </div>
 </div>
 
+<div class="section light" id="ganensfryd">
+    <div class="row wide">
+        <div class="col-md-12 col-sm-12 content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1007.5066568589378!2d8.451773178297902!3d55.46657316343962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b212b2f1e12cd%3A0xcc33349cd629c25f!2sPosthuset+Esbjerg!5e0!3m2!1sda!2sdk!4v1508081680670" width="100%" height="450" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""></iframe>  
+        </div>
+    </div>
+</div>
+
 <!-- Functions -->
 
 <script>
