@@ -29,7 +29,11 @@ $events_query = new WP_Query($events_args); //create new query
                     <div class="col-md-12 col-sm-12 content">
                         <h2> <?php the_field('room_title') ?> </h2>
                         <h3> <?php the_field('room_subtitle') ?> </h3>
-                        <div id="room-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <?php
+                        $carousel = "carousel";
+                        $carouselIndex = $carousel . strval($index);
+                        ?>
+                        <div id="<?php echo $carouselIndex ?>" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <?php 
                                 $carouselItem1 = get_field("room_carousel_item1");
@@ -50,11 +54,11 @@ $events_query = new WP_Query($events_args); //create new query
                                     </div>
                                 <?php } ?>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#room-carousel" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#<?php echo $carouselIndex ?>" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#room-carousel" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#<?php echo $carouselIndex ?>" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>

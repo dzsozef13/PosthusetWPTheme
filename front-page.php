@@ -189,7 +189,6 @@ $buttonSection4 = get_field('section4_button');
         let target = document.getElementById(view);
         target.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }
-
 </script>
 
 <?php get_footer() ?>
