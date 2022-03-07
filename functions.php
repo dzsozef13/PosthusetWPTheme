@@ -26,6 +26,7 @@ register_nav_menus(
     //Menu locations
     array(
         'main-menu' => 'Main Menu',
-        'mobile-menu' => 'Mobile Menu'
+        'mobile-menu' => 'Mobile Menu',
+        'footer-menu' => 'Footer Menu'
     )
 ) ?>
