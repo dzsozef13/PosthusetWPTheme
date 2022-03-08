@@ -81,6 +81,20 @@ $buttonSection4 = get_field('section4_button');
     </div>
 </div>
 
+<!-- Facebook -->
+
+<div class="section wood" id="facebook">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 content">
+            <?php $facebookLink = get_field("facebook_post"); 
+            $fbParams = "&width=500&show_text=true&height=507&appId";
+            $postUrl = $facebookLink . strval($fbParams);
+            ?>
+            <iframe src="<?php echo $facebookLink ?>" width="100%" height="400" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+</div>
+
 <!-- Posten -->
 
 <div class="section light" id="posten">

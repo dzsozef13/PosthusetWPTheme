@@ -216,4 +216,8 @@
         display: flex;
     }
 
+    #facebook {
+        padding-top: 40px;
+    }
+
 }

@@ -1,6 +1,6 @@
 <?php wp_footer(); ?>
 
-<div id="footer" class="paper">
+<div id="footer" class="wood">
     <div class="row">
         <div id="footer-content-container" class="col-md-6 col-sm-12">
             <h3>Opening Hours</h3>
