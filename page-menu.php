@@ -12,39 +12,28 @@
     </div>
 </div>
 
-<?php 
-$menu_args  = array('post_type' => 'menucard'); //array of arguments
-$menu_query = new WP_Query($menu_args); //create new query
-?>
+<div class="section paper">
+    <div class="row">
 
-<?php while($menu_query -> have_posts()): $menu_query -> the_post() ?>
+        <?php 
+        $menu_args  = array('post_type' => 'menucard'); //array of arguments
+        $menu_query = new WP_Query($menu_args); //create new query
+        ?>
+        <?php while($menu_query -> have_posts()): $menu_query -> the_post() ?>
+        
+        <div class="col-md-6 col-sm-12 content align-top">
+            <h2> <?php the_field('menu_title') ?> </h2>
+            <h6> <?php the_field('menu_description') ?> </h6>
+            <?php $button = get_field('menu_button') ?>
+            <a href="<?php echo $button['url'] ?>" target="_blank" class="button">
+                <h2> <?php echo $button['title'] ?> </h2>
+                <div class="button-deco"></div>
+            </a>  
+        </div>
 
-    <?php $index = $index + 1; ?>
-        <?php if ($index % 2 == 0) { ?>
-            <div class="section paper">
-        <?php } else { ?>
-            <div class="section paper">
-        <?php } ?>
-            <?php if ($index % 2 == 0) { ?>
-                <div class="row">
-            <?php } else { ?>
-                <div class="row reversed">
-            <?php } ?>
-                    <div class="col-md-6 col-sm-12 content">
-                        <h2> <?php the_field('menu_title') ?> </h2>
-                        <h6> <?php the_field('menu_description') ?> </h6>
-                        <?php $button = get_field('menu_button') ?>
-                        <a href="<?php echo $button['url'] ?>" target="_blank" class="button">
-                            <h2> <?php echo $button['title'] ?> </h2>
-                            <div class="button-deco"></div>
-                        </a>  
-                    </div>
-                    <div class="col-md-6 col-sm-12 content">
-                        <div class="img" style="background-image: url(<?php the_field('menu_image'); ?>);"></div>
-                    </div>
-                </div>
-            </div>
+        <?php endwhile ?>
 
-<?php endwhile ?>
+    </div>
+</div>
 
 <?php get_footer() ?>

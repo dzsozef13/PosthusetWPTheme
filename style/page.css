@@ -77,6 +77,10 @@
     padding: 64px;
 }
 
+.align-top {
+    align-self: flex-start;
+}
+
 .carousel {
     width: 100%;
     margin: 32px 0 0 0;
