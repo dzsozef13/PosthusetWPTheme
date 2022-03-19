@@ -93,6 +93,18 @@
     background-repeat: no-repeat;
 }
 
+.carousel-control-prev-icon {
+    padding: 16px;
+    background-size: 75%;
+    background-color: #B13535;
+}
+
+.carousel-control-next-icon {
+    padding: 16px;
+    background-size: 75%;
+    background-color: #B13535;
+}
+
 /* header section */
 
 .section-header {
