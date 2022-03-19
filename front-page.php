@@ -90,7 +90,7 @@ $buttonSection4 = get_field('section4_button');
             $fbParams = "&width=500&show_text=true&height=507&appId";
             $postUrl = $facebookLink . strval($fbParams);
             ?>
-            <iframe src="<?php echo $facebookLink ?>" width="100%" height="400" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <iframe src="<?php echo $facebookLink ?>" width="100%" height="" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
     </div>
 </div>
