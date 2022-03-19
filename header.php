@@ -26,6 +26,12 @@
 </head>
 <body>
 
+<!-- facebook plugin -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v13.0" nonce="EqaCcw8i"></script>
+
+
+<!-- navigation -->
 <?php if (current_user_can('administrator')) { ?>
     <header id="header" style="margin-top:32px">
 <?php } else { ?>
@@ -57,6 +63,7 @@
 
 <script>
 
+// mobile navigation toggle
 function toggleNav() {
     var nav = document.getElementById("nav");
     var navMobile = document.getElementById("nav-mobile");
