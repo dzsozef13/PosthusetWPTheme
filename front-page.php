@@ -85,12 +85,8 @@ $buttonSection4 = get_field('section4_button');
 
 <div class="section wood" id="facebook">
     <div class="row">
-        <div class="col-md-6 col-sm-12 content">
-            <?php $facebookLink = get_field("facebook_post"); 
-            $fbParams = "&width=500&show_text=true&height=507&appId";
-            $postUrl = $facebookLink . strval($fbParams);
-            ?>
-            <iframe src="<?php echo $facebookLink ?>" width="100%" height="" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <div class="col-md-12 col-sm-12 content">
+            <div class="fb-page" data-href="https://www.facebook.com/posthusetesbjerg/" data-tabs="timeline, events" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/posthusetesbjerg/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/posthusetesbjerg/">Posthuset</a></blockquote></div>
         </div>
     </div>
 </div>

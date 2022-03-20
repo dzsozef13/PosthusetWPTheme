@@ -9,6 +9,9 @@
             <h3> <?php the_title() ?> </h3>
             <h6> <?php the_content() ?> </h6>
         </div>
+        <div class="col-md-6 col-sm-12 content-header">
+            <div class="fb-page" data-href="https://www.facebook.com/posthusetesbjerg/" data-tabs="timeline, events" data-width="" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/posthusetesbjerg/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/posthusetesbjerg/">Posthuset</a></blockquote></div>
+        </div>
     </div>
 </div>
 
