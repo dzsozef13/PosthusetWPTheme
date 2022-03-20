@@ -94,6 +94,10 @@
     text-decoration: none;
 }
 
+#welcome-cards .welcome-card-ganens:hover {
+    background-color: #80AA51;
+}
+
 #welcome-cards .welcome-card h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
@@ -161,6 +165,10 @@
 #welcome-cards-mobile .welcome-card-mobile:hover {
     background-color: #B13535;
     text-decoration: none;
+}
+
+#welcome-cards-mobile .welcome-card-mobile-ganens:hover {
+    background-color: #80AA51;
 }
 
 #welcome-cards-mobile .welcome-card-mobile h3 {
