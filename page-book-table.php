@@ -12,7 +12,6 @@
         <div class="col-md-6 col-sm-12 content align-top">
             <div class="small-img" style="background-image: url(<?php the_field('table_image'); ?>);"></div>
             <h2> <?php the_field('table_title') ?> </h2>
-            <h6> <?php the_field('table_description') ?> </h6>
             <?php $button = get_field('table_button') ?>
             <a href="<?php echo $button['url'] ?>" target="_blank" class="button">
                 <h2> <?php echo $button['title'] ?> </h2>
