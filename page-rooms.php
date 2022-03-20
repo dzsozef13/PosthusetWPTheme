@@ -12,6 +12,14 @@
     </div>
 </div>
 
+<div class="section paper">
+    <div class="row wide">
+        <div class="col-md-12 col-sm-12 content">
+            <h6> <?php the_field('history') ?> </h6>
+        </div>
+    </div>
+</div>
+
 <?php 
 $events_args  = array('post_type' => 'room'); //array of arguments
 $events_query = new WP_Query($events_args); //create new query
