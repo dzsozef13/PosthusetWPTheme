@@ -42,7 +42,7 @@ $buttonSection4 = get_field('section4_button');
             <div class="card-img" style="background-image: url(<?php the_field('welcome_card3_image') ?>);"></div>
             <h3> <?php the_field('welcome_card3_title') ?> </h3>
         </a>
-        <a class="welcome-card" href="javascript:void(0);" onclick="scrollToView('ganensfryd')">
+        <a class="welcome-card welcome-card-ganens" href="javascript:void(0);" onclick="scrollToView('ganensfryd')">
             <div class="card-img" style="background-image: url(<?php the_field('welcome_card4_image') ?>);"></div>
             <h3> <?php the_field('welcome_card4_title') ?> </h3>
         </a>
@@ -65,7 +65,7 @@ $buttonSection4 = get_field('section4_button');
             <div class="card-img-mobile" style="background-image: url(<?php the_field('welcome_card3_image') ?>);"></div>
             <h3> <?php the_field('welcome_card3_title') ?> </h3>
         </a>
-        <a class="welcome-card-mobile" href="javascript:void(0);" onclick="scrollToView('ganensfryd')">
+        <a class="welcome-card-mobile welcome-card-mobile-ganens" href="javascript:void(0);" onclick="scrollToView('ganensfryd')">
             <div class="card-img-mobile" style="background-image: url(<?php the_field('welcome_card4_image') ?>);"></div>
             <h3> <?php the_field('welcome_card4_title') ?> </h3>
         </a>
@@ -175,9 +175,9 @@ $buttonSection4 = get_field('section4_button');
     <div class="row">
     <div class="col-md-6 col-sm-12 content">
             <h2> <?php the_field('section4_title') ?> </h2>
-            <h3> <?php the_field('section4_subtitle') ?> </h3>
+            <h3 class="ganens"> <?php the_field('section4_subtitle') ?> </h3>
             <h6> <?php the_field('section4_text') ?> </h6>
-            <a href="<?php echo $buttonSection4['url'] ?>" class="button">
+            <a href="<?php echo $buttonSection4['url'] ?>" class="button ganens-button">
                 <h2> <?php echo $buttonSection4['title'] ?> </h2>
                 <div class="button-deco"></div>
             </a>    
