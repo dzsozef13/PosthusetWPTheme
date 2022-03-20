@@ -9,6 +9,9 @@
             <h3> <?php the_title() ?> </h3>
             <h6> <?php the_content() ?> </h6>
         </div>
+        <div class="col-md-6 col-sm-12 content-header">
+            <div class="header-img" style="background-image: url(<?php the_field('header_cover_image'); ?>);"></div>
+        </div>
     </div>
 </div>
 
@@ -22,6 +25,7 @@
         <?php while($menu_query -> have_posts()): $menu_query -> the_post() ?>
         
         <div class="col-md-6 col-sm-12 content align-top">
+            <div class="small-img" style="background-image: url(<?php the_field('menu_image'); ?>);"></div>
             <h2> <?php the_field('menu_title') ?> </h2>
             <h6> <?php the_field('menu_description') ?> </h6>
             <?php $button = get_field('menu_button') ?>
