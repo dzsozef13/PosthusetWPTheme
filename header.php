@@ -28,7 +28,7 @@
 
 <!-- facebook plugin -->
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v13.0" nonce="EqaCcw8i"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/dk_DK/sdk.js#xfbml=1&version=v13.0" nonce="EqaCcw8i"></script>
 
 
 <!-- navigation -->

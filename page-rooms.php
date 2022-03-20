@@ -29,9 +29,9 @@ $events_query = new WP_Query($events_args); //create new query
 
     <?php $index = $index + 1; ?>
         <?php if ($index % 2 == 0) { ?>
-            <div class="section stone">
-        <?php } else { ?>
             <div class="section paper">
+        <?php } else { ?>
+            <div class="section stone">
         <?php } ?>
                 <div class="row wide">
                     <div class="col-md-12 col-sm-12 content">

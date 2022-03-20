@@ -15,7 +15,7 @@ $buttonSection4 = get_field('section4_button');
             <h1> <?php the_field('welcome_text') ?> </h1>
         </div>
         <a href="https://g.page/posthusetesbjerg?share" target="_blank" class="button">
-            <h2> Find on map! </h2>
+            <h2> Find os på kortet </h2>
             <div class="button-deco"></div>
         </a>  
     </div>
