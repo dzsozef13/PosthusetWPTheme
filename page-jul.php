@@ -1,5 +1,19 @@
 <?php get_header(); ?>
 
+<div class="section-header stone">
+    <div class="row row-header">
+        <!-- <div class="col-md-8 col-sm-12" style="padding:0;">
+            <div class="img-header" style="background-image: url(<?php the_field('header_cover_image'); ?>);"></div>
+        </div> -->
+        <div class="col-md-6 col-sm-12 content-header">
+            <h3> <?php the_title() ?> </h3>
+        </div>
+        <div class="col-md-6 col-sm-12 content-header">
+            <div class="header-img" style="background-image: url(<?php the_field('header_cover_image'); ?>);"></div>
+        </div>
+    </div>
+</div>
+
 <div class="section paper" id="posten">
     <div class="row wide">
         <div class="col-md-12 col-sm-12 content">
