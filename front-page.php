@@ -83,13 +83,13 @@ $buttonSection4 = get_field('section4_button');
 
 <!-- Facebook -->
 
-<div class="section wood" id="facebook">
+<!-- <div class="section wood" id="facebook">
     <div class="row">
         <div class="col-md-12 col-sm-12 content">
             <div class="fb-page" data-href="https://www.facebook.com/posthusetesbjerg/" data-tabs="timeline, events" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/posthusetesbjerg/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/posthusetesbjerg/">Posthuset</a></blockquote></div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Posten -->
 
