@@ -36,6 +36,10 @@
     padding: .25rem, 1rem;
 }
 
+#nav #menu-main-menu .current-menu-item a {
+    color: #B13535;
+}
+
 /* navigation structure */
 
 #nav {
