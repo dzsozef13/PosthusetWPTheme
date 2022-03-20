@@ -2,12 +2,12 @@
 
 <div class="section-header stone">
     <div class="row row-header">
-        <!-- <div class="col-md-8 col-sm-12" style="padding:0;">
-            <div class="img-header" style="background-image: url(<?php the_field('header_cover_image'); ?>);"></div>
-        </div> -->
         <div class="col-md-6 col-sm-12 content-header">
-            <h3> <?php the_title() ?> </h3>
+        <h3> <?php the_title() ?> </h3>
             <h6> <?php the_content() ?> </h6>
+        </div>
+        <div class="col-md-6 col-sm-12 content-header">
+            <div class="header-img" style="background-image: url(<?php the_field('header_cover_image'); ?>);"></div>
         </div>
     </div>
 </div>
@@ -33,13 +33,15 @@ $events_query = new WP_Query($events_args); //create new query
                         $carousel = "carousel";
                         $carouselIndex = $carousel . strval($index);
                         ?>
+                        <?php 
+                        $carouselItem1 = get_field("room_carousel_item1");
+                        $carouselItem2 = get_field("room_carousel_item2");
+                        $carouselItem3 = get_field("room_carousel_item3");
+                        ?>
+                        <?php if ($carouselItem1 || $carouselItem2 || $carouselItem3) { ?>
+
                         <div id="<?php echo $carouselIndex ?>" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <?php 
-                                $carouselItem1 = get_field("room_carousel_item1");
-                                $carouselItem2 = get_field("room_carousel_item2");
-                                $carouselItem3 = get_field("room_carousel_item3");
-                                ?>
                                 <?php if ($carouselItem1) { ?>
                                     <div class="carousel-item active">
                                         <div class="carousel-img" style="background-image: url(<?php echo $carouselItem1 ?>);"></div>
@@ -63,6 +65,8 @@ $events_query = new WP_Query($events_args); //create new query
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
+
+                        <?php } ?>
                         <h6> <?php the_field('room_description') ?> </h6>
                         <!-- <h3 class="price-tag"> Fra <?php the_field('room_pricetag') ?>,-</h3>
                         <h6 class="price-note"> per person </h6> -->
