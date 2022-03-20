@@ -1,4 +1,5 @@
 <?php get_header(); 
+$welcomeButton = get_field('welcome_button');
 $buttonIntro = get_field('intro_button');
 $buttonSection1 = get_field('section1_button');
 $buttonSection2 = get_field('section2_button');
@@ -14,10 +15,14 @@ $buttonSection4 = get_field('section4_button');
         <div id="welcome-title">
             <h1> <?php the_field('welcome_text') ?> </h1>
         </div>
-        <a href="https://g.page/posthusetesbjerg?share" target="_blank" class="button">
+        <a href="<?php echo $welcomeButton['url'] ?>" class="button">
+            <h2> <?php echo $welcomeButton['title'] ?> </h2>
+            <div class="button-deco"></div>
+        </a> 
+        <!-- <a href="https://g.page/posthusetesbjerg?share" target="_blank" class="button">
             <h2> Find os på kortet </h2>
             <div class="button-deco"></div>
-        </a>  
+        </a>   -->
     </div>
 </div>
 
