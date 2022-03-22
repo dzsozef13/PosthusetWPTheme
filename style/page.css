@@ -235,6 +235,9 @@
     margin-bottom: 24px;
     background-size: cover;
     background-position: center;
+    border-style: solid;
+    border-width: 0 0 0 32px;
+    border-color: #B13535;
 }
 
 .header-img {

@@ -36,6 +36,10 @@
     padding: .25rem, 1rem;
 }
 
+#nav #menu-main-menu .current-menu-item a {
+    color: #B13535;
+}
+
 /* navigation structure */
 
 #nav {
@@ -154,6 +158,15 @@
 
     #nav-mobile-toggle {
         display: block;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+
+    #nav a {
+        font-size: 18px;
+        padding: 8px 8px 8px 8px;
     }
 
 }

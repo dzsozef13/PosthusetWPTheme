@@ -27,11 +27,12 @@
     height: 100%;
     margin-top: 50px;
     max-height: 30vh;
+    max-width: 500px;
 }
 
 #welcome #welcome-content #welcome-title h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin: 0;
 }

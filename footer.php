@@ -3,21 +3,11 @@
 <div id="footer" class="wood">
     <div class="row">
         <div id="footer-content-container" class="col-md-6 col-sm-12">
-            <h3>Åbningstider</h3>
-			<h4>Åbningstider efter uge 12, 2022 </h4>
-            <h6>
-                Mandag - Lørdag: 09.00 - 21.00  <br>
-                Søndag: 09.00 - 15.00
-            </h6>
-			<h4> Åbningstider fra uge 1, 2022 </h4>
-            <h6>Tirsdag - Lørdag: 09.00 - 21.00</h6>
-            <h3> Kontakt </h3>
-			<h4> Telefon </h4>
-            <h6> +45 69136013 </h6>
-            <h4> Mail </h4>
-            <h6> info@posthuset.dk </h6>
-            <h4> Adresse </h4>
-            <h6> Torvet 20, 6700 Esbjerg, Denmark </h6>
+            <h3>Restaurant Posten</h3>
+            <h6>Frokost - fredag - L&oslash;rdag: 11.30 - 15.00<br />Aften - Torsdag - L&oslash;rdag: 17.00 - 24.00<br /><br />2.sal, Torvet 20, 6700 Esbjerg, Denmark<br />+45 69136013<br />info@restaurant-loftet.dk</h6>
+            <h3>HomeRun, Nightclub - Gastro sportsbar</h3>
+            <h6>Onsdag - Torsdag: 16.00 - 24.00 <br />Fredag - L&oslash;rdag: 12.00 - LUK<br /><br />1.sal, Torvet 20, 6700 Esbjerg, Denmark<br />+45 69136018<br />info@homerunesbjerg.dk</h6>
+            <h6>(Ekstra lukke dage kan forekomme se mere p&aring; bord booking)</h6>
         </div>
         <div id="footer-menu-container" class="col-md-6 col-sm-12">
             <div id="nav-footer">
