@@ -1,3 +1,4 @@
+<?php /* Template Name: Default Template */ ?>
 <?php get_header(); ?>
 
 <div class="section light">

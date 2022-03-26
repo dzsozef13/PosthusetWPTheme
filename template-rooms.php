@@ -1,3 +1,4 @@
+<?php /* Template Name: Rooms Template */ ?>
 <?php get_header(); ?>
 
 <div class="section-header stone">

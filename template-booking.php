@@ -1,3 +1,4 @@
+<?php /* Template Name: Booking Template */ ?>
 <?php get_header(); ?>
 
 <div class="section paper">
