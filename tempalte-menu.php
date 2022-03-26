@@ -1,3 +1,4 @@
+<?php /* Template Name: Menu Template */ ?>
 <?php get_header(); ?>
 
 <div class="section-header stone">
