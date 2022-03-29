@@ -110,6 +110,16 @@
     padding: 0 32px 0 32px;
 }
 
+#nav-mobile .menu-main-menu-english-container {
+    width: 100%;
+    padding: 0 32px 0 32px;
+}
+
+#nav-mobile .menu-main-menu-deutsch-container {
+    width: 100%;
+    padding: 0 32px 0 32px;
+}
+
 #nav-mobile #menu-main-menu-1 .menu-item {
     text-decoration: none;
     padding: 8px 0 8px 0;

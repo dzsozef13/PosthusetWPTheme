@@ -1,5 +1,15 @@
 /* welcome */
 
+#video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 #welcome {
     display: flex;
     flex-direction: column;
@@ -15,7 +25,6 @@
     padding: 10vh 32px 0 32px;
 
     color: white;
-    background-color: black;
     background-size: cover;
     background-position: bottom 25% center;
 }
@@ -100,7 +109,7 @@
 }
 
 #welcome-cards .welcome-card h3 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     padding: 8px;
     color: #eee;
