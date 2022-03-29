@@ -9,7 +9,11 @@ $buttonSection4 = get_field('section4_button');
 
 <!-- Home Header -->
 
-<div id="welcome" style="background-image: url(<?php the_field('welcome_background') ?>);">
+<!-- <div id="welcome" style="background-image: url(<?php the_field('welcome_background') ?>);"> -->
+<div id="welcome">
+    
+    <video id="video" class="" src="wp-content/themes/PosthusetWPTheme/assets/posthuset_comp720.mp4" playsinline loop muted autoplay style="margin:0;"></video>
+
     <div id="welcome-content">
         <div id="welcome-logo" style="background-image: url(<?php the_field('welcome_logo') ?>);"></div>
         <div id="welcome-title">
@@ -18,7 +22,7 @@ $buttonSection4 = get_field('section4_button');
         <a href="<?php echo $welcomeButton['url'] ?>" class="button">
             <h2> <?php echo $welcomeButton['title'] ?> </h2>
             <div class="button-deco"></div>
-        </a> 
+        </a>
         <!-- <a href="https://g.page/posthusetesbjerg?share" target="_blank" class="button">
             <h2> Find os på kortet </h2>
             <div class="button-deco"></div>
